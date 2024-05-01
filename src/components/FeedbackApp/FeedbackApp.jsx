@@ -31,8 +31,8 @@ const FeedbackApp = () => {
   const positivePercentage = countPositiveFeedbackPercentage();
 
   return (
-    <div>
-      <Section title="Please leave a feedback">
+    <div className={StyleSheet.divSection}>
+      <Section className={styles.sectionTitle} title="Please leave a feedback">
         <FeedbackOptions
           options={['good', 'neutral', 'bad']}
           onLeaveFeedback={handleLeaveFeedback}
